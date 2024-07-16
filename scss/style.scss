@@ -1,0 +1,90 @@
+@import "null.scss";
+[class*="__container"] {
+    padding: 0 15px;
+    width: 100%;
+    max-width: 1110px;
+    margin: 0 auto;
+}
+
+// ===== HEADER =====
+
+.header {
+    position: relative;
+    padding: 30px 0;
+    @media (max-width: 768px) {
+        padding: 15px 0;
+    }
+    &__container {
+        max-width: 920px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @media (max-width: 768px) {
+            & {
+                justify-content: center;
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        gap: 56px;
+
+        @media (max-width: 940px) {
+            & {
+                gap: 26px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            & {
+                display: none;
+            }
+        }
+    }
+}
+
+// ===== HERO BLOCK =====
+
+.hero {
+    position: relative;
+    &__bg {
+        position: absolute;
+        z-index: -1;
+    }
+
+    &__subtitle {
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 72px;
+        color: white;
+        margin: 412 0 10 0;
+    }
+
+    &__title {
+        font-size: 100px;
+        font-weight: 700;
+        line-height: 150px;
+        -webkit-text-stroke:1px white;
+        color: transparent;
+    }
+
+    &__video {
+        display: flex;
+        gap: 45px;
+        hr {
+            width: 887px;
+            height: 2px;
+            background-color: white;
+        }
+        
+        p {
+            color: white;
+            flex-wrap: nowrap;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+        }
+    }
+}
