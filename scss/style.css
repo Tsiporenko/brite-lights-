@@ -79,7 +79,10 @@ h6 {
 }
 
 .header {
-  position: absolute;
+  position: fixed;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
   z-index: 5;
   padding: 30px 0;
 }
@@ -102,6 +105,7 @@ h6 {
 .header__menu {
   display: flex;
   gap: 56px;
+  color: white;
 }
 @media (max-width: 940px) {
   .header__menu {
@@ -118,8 +122,15 @@ h6 {
   position: relative;
 }
 .hero__bg {
+  width: 100vw;
+  height: 100vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.hero__inner {
   position: absolute;
-  z-index: -1;
+  z-index: 2;
+  bottom: 20%;
 }
 .hero__subtitle {
   font-weight: 700;
@@ -140,13 +151,15 @@ h6 {
   gap: 45px;
 }
 .hero__video hr {
-  width: 887px;
+  width: 100%;
+  max-width: 887px;
   height: 2px;
   background-color: white;
+  align-self: center;
 }
 .hero__video p {
   color: white;
-  flex-wrap: nowrap;
+  text-wrap: nowrap;
   font-size: 18px;
   font-weight: 500;
   line-height: 27px;
