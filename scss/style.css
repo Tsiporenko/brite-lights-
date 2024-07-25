@@ -261,11 +261,13 @@ h6 {
 
 .about {
   margin-top: 180px;
+  padding-bottom: 100px;
 }
 .about__container {
   color: white;
   display: flex;
   gap: 125px;
+  align-items: center;
 }
 .about__logo {
   display: flex;
@@ -283,7 +285,13 @@ h6 {
   line-height: 24px;
   margin-bottom: 60px;
 }
+.about__information {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 30px;
+}
 .about__information-inner {
+  width: 50%;
   font-weight: 600;
   line-height: 27px;
   display: flex;
@@ -295,4 +303,17 @@ h6 {
   background-color: #7A66CC;
   border: 1px solid #7A66CC;
   border-radius: 15px 0 15px 0;
+}
+.about__img-inner {
+  position: relative;
+}
+.about__img-inner img {
+  border-radius: 30px 0 30px 0;
+}
+.about__img-inner img:last-child {
+  position: absolute;
+  z-index: -1;
+  top: 65px;
+  left: 95px;
+  filter: brightness(0.2);
 }/*# sourceMappingURL=style.css.map */
