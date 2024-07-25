@@ -87,6 +87,7 @@
 .about__logo {
   display: flex;
   margin-bottom: 60px;
+  gap: 30px;
 }
 .about__title {
   font-weight: 700;
@@ -102,4 +103,13 @@
 .about__information-inner {
   font-weight: 600;
   line-height: 27px;
+  display: flex;
+  gap: 20px;
+}
+.about__mark {
+  width: 30px;
+  height: 30px;
+  background-color: #7A66CC;
+  border: 1px solid #7A66CC;
+  border-radius: 15px 0 15px 0;
 }/*# sourceMappingURL=home.css.map */
